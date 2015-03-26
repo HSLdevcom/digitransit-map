@@ -46,7 +46,7 @@ layers:
 maxzoom: 19
 minzoom: 0
 name: Streets
-source: "mapbox:///mapbox.mapbox-terrain-v2,mapbox.mapbox-streets-v5"
+source: "http://tiletest.kapsi.fi:8080/index.json"
 styles: 
   - vars.mss
   - bg.mss
@@ -54,4 +54,5 @@ styles:
   - label.mss
   - poi_classic.mss
   - terrain.mss
+  - style.mss
 template: ''

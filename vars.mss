@@ -10,23 +10,22 @@
 @name: '[name]';
 
 // set up font sets for various weights and styles
-@sans_lt:           "Open Sans Regular","Arial Unicode MS Regular";
-@sans_lt_italic:    "Open Sans Italic","Arial Unicode MS Regular";
-@sans:              "Open Sans Semibold","Arial Unicode MS Regular";
-@sans_bold:         "Open Sans Bold","Arial Unicode MS Regular";
-@sans_italic:       "Open Sans Semibold Italic","Arial Unicode MS Regular";
-@sans_bold_italic:  "Open Sans Bold Italic","Arial Unicode MS Regular";
+@sans_lt:           "Gotham Rounded Book","Arial Unicode MS Regular";
+@sans_lt_italic:    "Gotham Rounded Book Italic","Arial Unicode MS Regular";
+@sans:              "Gotham Rounded Medium","Arial Unicode MS Regular";
+@sans_bold:         "Gotham Rounded Bold","Arial Unicode MS Regular";
+@sans_italic:       "Gotham Rounded Medium Italic","Arial Unicode MS Regular";
+@sans_bold_italic:  "Gotham Rounded Bold Italic","Arial Unicode MS Regular";
 
 // =====================================================================
 // LANDUSE & LANDCOVER COLORS
 // =====================================================================
-
 @land:              #E8E0D8;
-@water:             #73B6E6;
+@water:             #bee4f8;
 @grass:             #E1EBB0;
 @sand:              #F7ECD2;
 @rock:              #D8D7D5;
-@park:              #C8DF9F;
+@park:              #c1e5a1;
 @cemetery:          #D5DCC2;
 @wood:              #B0C89F;
 @industrial:        #DDDCDC;
@@ -55,15 +54,15 @@
 
 @motorway_line:     #fff;
 @motorway_fill:     #fff;
-@motorway_case:     #000;
+@motorway_case:     #666;
 
 @main_line:     #fff;
 @main_fill:     #fff;
-@main_case:     #000;
+@main_case:     #666;
 
 @road_line:     #fff;
 @road_fill:     #fff;
-@road_case:     #000;
+@road_case:     #666;
 
 @pedestrian_line:   #fff;
 @pedestrian_fill:   @pedestrian_line;
@@ -103,10 +102,10 @@
 @state_text:        #666;
 @state_halo:        @place_halo;
 
-@city_text:         @land * 0.1;
+@city_text:         @land * 0.3;
 @city_halo:         @place_halo;
 
-@town_text:         @land * 0.2;
+@town_text:         @land * 0.5;
 @town_halo:         @place_halo;
 
 @poi_text:          @poi_text;  
@@ -124,6 +123,6 @@
 @village_text:      #888;
 @village_halo:      @place_halo;
 
-@transport_text:    #445;
+@transport_text:    #666;
 
 /**/

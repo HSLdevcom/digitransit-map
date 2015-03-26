@@ -46,7 +46,7 @@
   text-fill: #666;
   text-avoid-edges: true;
   text-halo-fill: fadeout(@crop,80%);
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-min-distance: 50;
 }

@@ -192,7 +192,7 @@
   text-placement: point;
   text-fill: @state_text;
   text-halo-fill: @country_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-size: 10;
   [zoom>=5][zoom<=6] {
@@ -207,7 +207,7 @@
     text-wrap-width: 60;
   }
   [zoom>=9][zoom<=10] {
-    text-halo-radius: 2;
+    text-halo-radius: 1;
     text-size: 16;
     text-character-spacing: 2;
     [area>50000] { text-size: 18; text-character-spacing: 2; }
@@ -231,7 +231,7 @@
     shield-placement: point;
     shield-fill: @city_text;
     shield-halo-fill: #fff;
-    shield-halo-radius: 1.5;
+    shield-halo-radius: 1.0;
     shield-min-distance: 3;
     shield-wrap-width: 40;
     shield-line-spacing: -4;
@@ -268,7 +268,7 @@
   text-placement: point;
   text-fill: @city_text;
   text-halo-fill: #fff;
-  text-halo-radius: 2;
+  text-halo-radius: 1;
   text-halo-rasterizer: fast;
   text-wrap-width: 40;
   text-line-spacing: -4;
@@ -351,14 +351,14 @@
   text-placement: point;
   text-fill: @town_text;
   text-halo-fill: @town_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-wrap-width: 75;
   text-wrap-before: true;
   text-line-spacing: -4;
   text-size: 11;
   [zoom>=8] { text-size: 12; }
-  [zoom>=10] { text-size: 13; text-halo-radius: 2; }
+  [zoom>=10] { text-size: 13; text-halo-radius: 1; }
   [zoom>=11] { text-size: 14; }
   [zoom>=12] { text-size: 15; text-wrap-width: 80; }
   [zoom>=13] { text-size: 16; text-wrap-width: 120; }
@@ -377,7 +377,7 @@
   text-fill: @town_text;
   text-size: 11;
   text-halo-fill: @town_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -400,7 +400,7 @@
   text-fill: @other_text;
   text-size: 11;
   text-halo-fill: @other_halo;
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
@@ -424,7 +424,7 @@
     text-fill: @other_text;
     text-size: 11;
     text-halo-fill: @other_halo;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1.0;
     text-halo-rasterizer: fast;
     text-wrap-width: 60;
     text-wrap-before: true;
@@ -447,7 +447,7 @@
   [zoom=17][area>10000],
   [zoom>=18][area>0]{
     text-name: @name;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1.0;
     text-halo-rasterizer: fast;
     text-size: 11;
     text-wrap-width: 50;
@@ -495,7 +495,7 @@
   text-face-name: @sans_italic;
   text-fill: @water * 0.75;
   text-halo-fill: fadeout(#fff,80%);
-  text-halo-radius: 1.5;
+  text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-placement: line;
   text-size: 10;
@@ -563,10 +563,10 @@
     text-character-spacing: 0.25;
     text-placement: line;
     text-face-name: @sans;
-    text-fill: #444;
+    text-fill: #999;
     text-size: 8;
     text-halo-fill: @road_halo;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1.0;
     text-halo-rasterizer: fast;
     text-min-distance: 200; // only for labels w/ the same name
     [zoom>=14] { text-size: 9; }
@@ -601,7 +601,7 @@
     text-fill: #666;
     text-size: 9;
     text-halo-fill: @road_halo;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1.0;
     text-halo-rasterizer: fast;
     text-min-distance: 200; // only for labels w/ the same name
     [zoom>=17] { text-size: 10; }
