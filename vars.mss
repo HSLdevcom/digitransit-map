@@ -10,12 +10,12 @@
 @name: '[name]';
 
 // set up font sets for various weights and styles
-@sans_lt:           "Gotham Rounded Book","Arial Unicode MS Regular";
-@sans_lt_italic:    "Gotham Rounded Book Italic","Arial Unicode MS Regular";
-@sans:              "Gotham Rounded Medium","Arial Unicode MS Regular";
-@sans_bold:         "Gotham Rounded Bold","Arial Unicode MS Regular";
-@sans_italic:       "Gotham Rounded Medium Italic","Arial Unicode MS Regular";
-@sans_bold_italic:  "Gotham Rounded Bold Italic","Arial Unicode MS Regular";
+@sans_lt:           "Gotham Rounded Book";
+@sans_lt_italic:    "Gotham Rounded Book Italic";
+@sans:              "Gotham Rounded Medium";
+@sans_bold:         "Gotham Rounded Bold";
+@sans_italic:       "Gotham Rounded Medium Italic";
+@sans_bold_italic:  "Gotham Rounded Bold Italic";
 
 // =====================================================================
 // LANDUSE & LANDCOVER COLORS
