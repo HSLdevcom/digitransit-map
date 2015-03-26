@@ -48,19 +48,19 @@
 #poi_label[type='Rail Station'][network!=null][scalerank=2][zoom>=15],
 #poi_label[type='Rail Station'][network!=null][scalerank=3][zoom>=16],
 #poi_label[type='Rail Station'][network!=null][scalerank=4][zoom>=17]{
-  marker-file: url("img/rail/[network]-12.svg");
+  marker-file: url("img/rail/[network]-juna-asema.svg");
   marker-height: 12;
   marker-allow-overlap: false;
   [zoom=16] {
-    marker-file: url("img/rail/[network]-18.svg");
+    marker-file: url("img/rail/[network]-juna-asema.svg");
     marker-height: 18;
   }
   [zoom>16] {
-    marker-file: url("img/rail/[network]-12.svg");
+    marker-file: url("img/rail/[network]-juna-asema.svg");
     marker-height: 24;
     [scalerank=4] { marker-height: 12; }
     [scalerank=4][zoom>18] {
-      marker-file: url("img/rail/[network]-18.svg");
+      marker-file: url("img/rail/[network]-juna-asema.svg");
       marker-height: 18;
     }
   }
@@ -70,7 +70,7 @@
     text-face-name: @sans;
     text-fill: @transport_text;
     text-halo-fill: #fff;
-    text-halo-radius: 1.5;
+    text-halo-radius: 1.0;
     text-halo-rasterizer: fast;
     text-size: 11;
     text-wrap-width: 80;
@@ -78,7 +78,7 @@
     text-dy: 11;
     [zoom>=17][scalerank!=4] {
       text-size: 12;
-      text-halo-radius: 2;
+      text-halo-radius: 1;
       text-dy: 15;
     }
   }

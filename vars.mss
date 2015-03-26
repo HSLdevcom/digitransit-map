@@ -10,12 +10,12 @@
 @name: '[name]';
 
 // set up font sets for various weights and styles
-@sans_lt:           "Open Sans Regular","Arial Unicode MS Regular";
-@sans_lt_italic:    "Open Sans Italic","Arial Unicode MS Regular";
-@sans:              "Open Sans Semibold","Arial Unicode MS Regular";
-@sans_bold:         "Open Sans Bold","Arial Unicode MS Regular";
-@sans_italic:       "Open Sans Semibold Italic","Arial Unicode MS Regular";
-@sans_bold_italic:  "Open Sans Bold Italic","Arial Unicode MS Regular";
+@sans_lt:           "Gotham Rounded Book","Arial Unicode MS Regular";
+@sans_lt_italic:    "Gotham Rounded Book Italic","Arial Unicode MS Regular";
+@sans:              "Gotham Rounded Medium","Arial Unicode MS Regular";
+@sans_bold:         "Gotham Rounded Bold","Arial Unicode MS Regular";
+@sans_italic:       "Gotham Rounded Medium Italic","Arial Unicode MS Regular";
+@sans_bold_italic:  "Gotham Rounded Bold Italic","Arial Unicode MS Regular";
 
 // =====================================================================
 // LANDUSE & LANDCOVER COLORS
@@ -56,11 +56,11 @@
 
 @motorway_line:     #fff;
 @motorway_fill:     #fff;
-@motorway_case:     #000;
+@motorway_case:     #666;
 
 @main_line:     #fff;
 @main_fill:     #fff;
-@main_case:     #333;
+@main_case:     #666;
 
 @road_line:     #fff;
 @road_fill:     #fff;
