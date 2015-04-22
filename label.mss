@@ -227,7 +227,7 @@
   // This is slightly inefficient-looking CartoCSS, but it saves
   // some space in the project.xml
   [zoom=8] {
-    text-size: 13;
+    text-size: 14;
     text-wrap-width: 60;
     [scalerank>=0][scalerank<=1] { text-size: 18; }
     [scalerank>=2][scalerank<=3] { text-size: 16; }
@@ -235,7 +235,7 @@
     [scalerank>=6] { text-size: 13; }
   }
   [zoom=9] {
-    text-size: 14;
+    text-size: 15;
     text-wrap-width: 60;
     [scalerank>=0][scalerank<=1] { text-size: 19; }
     [scalerank>=2][scalerank<=3] { text-size: 17; }
@@ -243,7 +243,7 @@
     [scalerank>=6] { text-size: 14; }
   }
   [zoom=10] {
-    text-size: 15;
+    text-size: 16;
     text-wrap-width: 70;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -251,7 +251,7 @@
     [scalerank>=6] { text-size: 15; }
   }
   [zoom=11] {
-    text-size: 16;
+    text-size: 17;
     text-wrap-width: 80;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -259,7 +259,7 @@
     [scalerank>=6] { text-size: 16; }
   }
   [zoom=12] {
-    text-size: 17;
+    text-size: 18;
     text-wrap-width: 100;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
     [scalerank>=2][scalerank<=3] { text-size: 19; }
@@ -267,7 +267,6 @@
     [scalerank>=6] { text-size: 17; }
   }
   [zoom=13] {
-    text-fill: mix(@city_text,@land,80);
     text-size: 18;
     text-wrap-width: 200;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
@@ -276,7 +275,6 @@
     [scalerank>=6] { text-size: 17; }
   }
   [zoom=14] {
-    text-fill: mix(@city_text,@land,60);
     text-size: 19;
     text-wrap-width: 300;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
@@ -285,7 +283,6 @@
     [scalerank>=6] { text-size: 18; }
   }
   [zoom=15] {
-    text-fill: mix(@city_text,@land,40);
     text-size: 20;
     text-wrap-width: 400;
     [scalerank>=0][scalerank<=1] { text-size: 20; }
@@ -309,22 +306,20 @@
   text-wrap-before: true;
   text-line-spacing: -4;
   text-size: 11;
-  [zoom>=8] { text-size: 12; }
-  [zoom>=10] { text-size: 13; }
-  [zoom>=11] { text-size: 14; }
-  [zoom>=12] { text-size: 15; text-wrap-width: 80; }
+  [zoom>=7] { text-size: 10; }
+  [zoom>=8] { text-size: 11; }
+  [zoom>=10] { text-size: 12; }
+  [zoom>=11] { text-size: 13; }
+  [zoom>=12] { text-size: 14; text-wrap-width: 80; }
   [zoom>=13] {
-    text-fill: mix(@city_text,@land,80);
-    text-size: 16;
+    text-size: 15;
     text-wrap-width: 120;
   }
   [zoom>=14] {
-    text-fill: mix(@city_text,@land,60);
     text-size: 18;
     text-wrap-width: 160;
   }
   [zoom>=15] {
-    text-fill: mix(@city_text,@land,40);
     text-size: 20;
     text-wrap-width: 200;
   }
@@ -333,30 +328,28 @@
 
 // 2_5 Villages ______________________________________________________
 
-#place_label[type='village'][zoom>=10][zoom<=14][localrank<=1],
-#place_label[type='village'][zoom>=15][zoom<=17] {
+#place_label[type='village'][zoom>=11][zoom<=14][localrank<=1],
+#place_label[type='village'][zoom>=15][zoom<=18] {
   text-name: @name;
-  text-face-name: @sans;
+  text-face-name: @sans_lt;
   text-placement: point;
-  text-fill: @town_text;
+  text-fill: @other_text;
   text-size: 11;
-  text-halo-fill: @town_halo;
+  text-halo-fill: @other_halo;
   text-halo-radius: 1.0;
   text-halo-rasterizer: fast;
   text-wrap-width: 60;
   text-wrap-before: true;
-  text-line-spacing: -4;
-  [zoom>=12] { text-size: 12; }
-  [zoom>=13] { text-wrap-width: 80; }
-  [zoom>=14] { text-size: 14; text-wrap-width: 100; }
-  [zoom>=15] { text-size: 16; text-wrap-width: 120; }
-  [zoom>=16] { text-size: 18; text-wrap-width: 160; }
-  [zoom=17] { text-size: 20; text-wrap-width: 200; }
+  text-line-spacing: -2;
+  [zoom>=14] { text-size: 13; text-wrap-width: 80; }
+  [zoom>=15] { text-size: 14; text-wrap-width: 120; }
+  [zoom>=16] { text-size: 16; text-wrap-width: 160; }
+  [zoom>=17] { text-size: 20; text-wrap-width: 200; }
 }
 
 // 2_6__ Suburbs _______________________________________________________
 
-#place_label[type='suburb'][zoom>=12][zoom<=14][localrank<=1],
+#place_label[type='suburb'][zoom>=11][zoom<=14][localrank<=1],
 #place_label[type='suburb'][zoom>=15][zoom<=18] {
   text-name: @name;
   text-face-name: @sans_lt;
@@ -369,7 +362,6 @@
   text-wrap-width: 60;
   text-wrap-before: true;
   text-line-spacing: -2;
-  [zoom>=13] { text-size: 12; text-min-distance: 20; }
   [zoom>=14] { text-size: 13; text-wrap-width: 80; }
   [zoom>=15] { text-size: 14; text-wrap-width: 120; }
   [zoom>=16] { text-size: 16; text-wrap-width: 160; }
@@ -492,9 +484,9 @@
   shield-name: "[ref].replace('·', '\n')";
   shield-size: 9;
   shield-line-spacing: -4;
-  shield-file: url('img/shield/[shield]-[reflen].svg');
+  shield-file: url('img/shield/default-[reflen].svg');
   shield-face-name: @sans;
-  shield-fill: #333;
+  shield-fill: #765;
   [zoom>=14] {
     shield-transform: scale(1.25,1.25);
     shield-size: 11;

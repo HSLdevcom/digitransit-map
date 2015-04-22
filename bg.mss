@@ -79,7 +79,7 @@ Map { background-color: @land; }
 // =====================================================================
 
 #landuse[zoom>=7] {
-  opacity: 0.25;
+  opacity: 1.0;
   [class='pitch'] {
     polygon-fill: @pitch;
     [zoom>14] {

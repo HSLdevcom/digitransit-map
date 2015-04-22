@@ -22,24 +22,24 @@
 // =====================================================================
 
 @land:              #E8E0D8;
-@water:             #bee4f7;
-@snow:              #E8EFEF;
+@water:             #BEE4F8;
+@snow:              #EDE5DD;
 @crop:              #E9E5C2;
 @building:          darken(@land, 8);
 
 // Landuse colors account for 25% opacity:
-@grass:             #c8ff2d;
-@sand:              #ffebb9;
-@rock:              #b7babb;
-@park:              #7cc800;
-@cemetery:          #8fd070;
-@wood:              #67b040;
-@industrial:        #c6c9ca;
-@agriculture:       #eedfaa;
-@hospital:          #fee4d8;
-@school:            #ffea5f;
-@pitch:             #63ff0d;
-@parking:           #fff;
+@grass:             #E1EBB0;
+@sand:              #F7ECD2;
+@rock:              #D8D7D5;
+@park:              #C1E5A1;
+@cemetery:          #D5DCC2;
+@wood:              #B0C89F;
+@industrial:        #DDDCDC;
+@agriculture:       #EAE0D0;
+@hospital:          #F2E3E1;
+@school:            #F2EAB8;
+@pitch:             #CAE6A9;
+@parking:           fadeout(@road_fill, 75%);
 @sports:            @park;
 
 // =====================================================================
@@ -74,7 +74,7 @@
 @path_fill:     #fff;
 @path_case:     @land;
 
-@rail_line:     #aaa;
+@rail_line:     #bbb;
 @rail_fill:     #fff;
 @rail_case:     @land;
 
@@ -104,16 +104,16 @@
 @state_text:        #765;
 @state_halo:        @place_halo;
 
-@city_text:         #000;
+@city_text:         #765;
 @city_halo:         @place_halo;
 
-@town_text:         @land * 0.2;
+@town_text:         #765;
 @town_halo:         @place_halo;
 
 @road_text:         #666;
 @road_halo:         #fff;
 
-@other_text:        darken(@land,50)*0.8;
+@other_text:        #765;
 @other_halo:        @place_halo;
 
 @locality_text:     #aaa;
@@ -123,6 +123,6 @@
 @village_text:      #888;
 @village_halo:      @place_halo;
 
-@transport_text:    #445;
+@transport_text:    #765;
 
 /**/
