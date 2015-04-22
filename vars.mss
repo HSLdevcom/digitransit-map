@@ -22,7 +22,7 @@
 // =====================================================================
 
 @land:              #E8E0D8;
-@water:             #73B6E6;
+@water:             #bee4f7;
 @snow:              #E8EFEF;
 @crop:              #E9E5C2;
 @building:          darken(@land, 8);
