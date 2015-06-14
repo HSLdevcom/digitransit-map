@@ -110,6 +110,9 @@ Map { background-color: @land; }
   [class='rock'] {
     polygon-fill: @rock;
   }
+  [class='grass'] {
+    polygon-fill: @grass;
+  }
   [class='industrial'] {
     polygon-fill: @industrial;
   }
