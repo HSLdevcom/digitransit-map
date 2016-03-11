@@ -1,4 +1,3 @@
-mapbox-studio-streets.tm2
--------------------------
+DEPRECATED:
 
-Classic Mapbox Streets with Vector Terrain.
+use [hsl-map-style](https://github.com/HSLdevcom/hsl-map-style)
